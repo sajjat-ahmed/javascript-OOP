@@ -1,5 +1,6 @@
 class Animal {
     static category = 'Dog';
+    location = 'Sundorbon';
     constructor(name, speed) {
         this.name = name;
         this.speed = speed;
@@ -12,5 +13,10 @@ class Animal {
     }
 }
 
-const myRat = new Animal('rat', 12);
-console.log(myRat);
+const myRat = new Animal('rat', 120);
+const myDog = new Animal('dog', 50);
+console.log(myRat.category);
+console.log(myRat.location);
+console.log(Animal.category);
+console.log(Animal.location);
+console.log(Animal.compare(myRat, myDog));
